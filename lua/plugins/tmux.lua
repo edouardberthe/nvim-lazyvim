@@ -1,5 +1,9 @@
 return {
   "aserowy/tmux.nvim",
-  -- lazy = false,
-  opts = {},
+  lazy = false,
+  opts = {
+    copy_sync = {
+      redirect_to_clipboard = true,
+    },
+  },
 }

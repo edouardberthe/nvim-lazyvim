@@ -7,6 +7,7 @@ return {
       clangd = {},
       ruff = {},
       rust_analyzer = {},
+      sqls = {},
       texlab = {
         settings = {
           texlab = {
