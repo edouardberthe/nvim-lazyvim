@@ -5,3 +5,5 @@
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
