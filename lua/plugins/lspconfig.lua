@@ -3,13 +3,19 @@ return {
   ---@class PluginLspOpts
   opts = {
     servers = {
-      -- Will be automatically installed with mason and loaded with lspconfig
+      -- C/C++ language server
       clangd = {},
+
+      -- Python linting and formatting
       ruff = {},
+
+      -- Rust language server (also handled by rustaceanvim)
       rust_analyzer = {},
-      -- sqls = {},
-      -- sqlls = {},
+
+      -- SQL formatting and linting
       sqruff = {},
+
+      -- LaTeX language server
       texlab = {
         settings = {
           texlab = {
@@ -23,11 +29,13 @@ return {
                 "--keep-logs",
                 "--keep-intermediates",
               },
-              onSave = true, -- (optionnel) compile à chaque sauvegarde
+              onSave = true, -- Auto-compile on save
             },
           },
         },
       },
+
+      -- TypeScript type checker
       ty = {},
     },
   },

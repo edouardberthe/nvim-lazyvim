@@ -23,7 +23,7 @@ return {
       function()
         require("substitute").line()
       end,
-      desc = "Substitute",
+      desc = "Substitute line",
     },
     {
       "S",

@@ -15,7 +15,7 @@ return {
       function()
         vim.cmd("bprev " .. vim.v.count1)
       end,
-      desc = "Next buffer",
+      desc = "Previous buffer",
     },
   },
 }
