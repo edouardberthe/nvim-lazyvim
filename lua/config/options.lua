@@ -5,3 +5,18 @@
 vim.opt.background = "dark"
 
 vim.diagnostic.config({ virtual_lines = { current_line = true } })
+
+-- Configuration OSC 52 pour clipboard via SSH
+vim.g.clipboard = {
+  name = "OSC 52",
+  copy = {
+    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+  },
+  paste = {
+    ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+  },
+}
+
+vim.opt.clipboard = "unnamedplus"
